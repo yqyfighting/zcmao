@@ -17,7 +17,7 @@
   a{text-decoration:none;}
 }
 .reset-sina(){
-  html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img ,div,input{ margin:0; padding:0;box-sizing:border-box; }
+  html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,div,input,header,footer,section{ margin:0; padding:0;box-sizing:border-box;}
   fieldset, img { border:none; }
   img{display: block;}
   address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
@@ -30,10 +30,10 @@
   textarea { resize:none; }
   input,textarea{background: none; border: none;}
   table { border-collapse:collapse; }
-  body { color:#333; font:12px/1.2 "SimSun","宋体","Arial Narrow",HELVETICA; background:#fff; }
-  a { color:#666; text-decoration:none; }
-  a:visited { color:#666; }
-  a:hover, a:active, a:focus { color:#ff8400; text-decoration:none; }
+  body { color:#333; font:12px/20px "微软雅黑","SimSun","宋体","Arial Narrow",HELVETICA; background:#fff; }
+  a {  text-decoration:none; }
+  a:visited {  }
+  a:hover, a:active, a:focus {  text-decoration:none; }
 }
 //去除a和label的虚线
 .remove_dotted(){
@@ -475,18 +475,79 @@
   .ellipsis-basic();
   width:100% - @substract;
 }
+
+
+//自定义的工具类
+body {
+  font: 12px/1.5  "微软雅黑",arial,tahoma, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+.fl{float:left;}
+.fr{float:right;}
+.clear:after{content:"";display: block;clear:both}
+.lh20{line-height:20px !important;padding:4px 0px;}
+
 @basicWidth:100;
-.h(@v){height:@v/@basicWidth*1rem}
-.w(@v){width:@v/@basicWidth*1rem}
-.fs(@v){font-size:@v/@basicWidth*1rem}
-.p(@v){padding:@v/@basicWidth*1rem}
-.pl(@v){padding-left:@v/@basicWidth*1rem}
-.pr(@v){padding-right:@v/@basicWidth*1rem}
-.ml(@v){margin-left:@v/@basicWidth*1rem}
-.mr(@v){margin-right:@v/@basicWidth*1rem}
-.mt(@v){margin-top:@v/@basicWidth*1rem}
-.lh(@v){line-height:@v/@basicWidth*1rem}
-.mb(@v){margin-bottom:@v/@basicWidth*1rem}
-.bs(@v1 @v2){background-size:@v1/@basicWidth*1rem @v2/@basicWidth*1rem}
-.pt(@v){padding-top:@v/@basicWidth*1rem}
-.pb(@v){padding-bottom:@v/@basicWidth*1rem}
+.fs(@v){
+    font-size:@v/@basicWidth*1rem;
+}
+.w(@v){
+    width:@v/@basicWidth*1rem;
+}
+.h(@v){
+    height:@v/@basicWidth*1rem;
+}
+.pl(@v){
+    padding-left:@v/@basicWidth*1rem;
+}
+.pr(@v){
+    padding-right:@v/@basicWidth*1rem;
+}
+.ml(@v){
+    margin-left:@v/@basicWidth*1rem;
+}
+.pt(@v){
+    padding-top:@v/@basicWidth*1rem;
+}
+.pb(@v){
+    padding-bottom:@v/@basicWidth*1rem;
+}
+.lh(@v){
+    line-height:@v/@basicWidth*1rem;
+}
+.mt(@v){
+    margin-top:@v/@basicWidth*1rem;
+}
+.mb(@v){
+    margin-bottom:@v/@basicWidth*1rem;
+}
+.mr(@v){
+    margin-right:@v/@basicWidth*1rem;
+}
+.p(@v1,@v2){
+    padding:@v1/@basicWidth*1rem @v2/@basicWidth*1rem;
+}
+.bs(@v1,@v2){
+    background-size:@v1/@basicWidth*1rem @v2/@basicWidth*1rem;
+}
+.br(@v){
+    border-radius:@v/@basicWidth*1rem;
+}
+.t(@v){
+    top:@v/@basicWidth*1rem;
+}
+.l(@v){
+    left:@v/@basicWidth*1rem;
+}
+.b(@v){
+    bottom:@v/@basicWidth*1rem;
+}
+.border(@v1,@v2,@v3,@v4){
+            border-top:@v1/@basicWidth*1rem solid #FB0502;
+            border-right:@v2/@basicWidth*1rem solid transparent;
+            border-bottom:@v3/@basicWidth*1rem solid transparent;
+            border-left:@v4/@basicWidth*1rem solid transparent;
+}
+.m(@v){
+    margin:@v/@basicWidth*1rem auto;
+}
+

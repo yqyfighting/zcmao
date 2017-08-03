@@ -1,0 +1,223 @@
+body {
+  font: 12px/1.5 "微软雅黑", arial, tahoma, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.lh20 {
+  line-height: 20px !important;
+  padding: 4px 0px;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+div,
+input,
+header,
+footer,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+fieldset,
+img {
+  border: none;
+}
+img {
+  display: block;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px/20px "微软雅黑", "SimSun", "宋体", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+html {
+  font-size: 100px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+body {
+  background-color: #f9f9f9;
+}
+a {
+  color: #fff;
+}
+header {
+  height: 0.92rem;
+  background-color: #FA3432;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.27rem;
+  padding-right: 0.36rem;
+  color: #fff;
+  font-size: 0.28rem;
+}
+header .iconfont {
+  font-size: 0.5rem;
+}
+.listwrap {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+.listwrap .listitem .item {
+  display: flex;
+  font-size: 0.28rem;
+  align-items: center;
+  margin-top: 0.27rem;
+  margin-bottom: 0.27rem;
+}
+.listwrap .listitem .item .icon-zhengmian {
+  width: 0.58rem;
+  height: 0.58rem;
+  border-radius: 0.1rem;
+  background-color: #FA9A33;
+  text-align: center;
+  line-height: 0.58rem;
+  font-size: 0.4rem;
+  color: #fff;
+  margin-right: 0.21rem;
+}
+.listwrap .listitem .item p {
+  margin-right: auto;
+}
+.listwrap .listitem .item span {
+  font-size: 0.3rem;
+}
+.dianhua {
+  display: flex;
+  height: 1.28rem;
+  background-color: #fff;
+  align-items: center;
+  padding-left: 0.3rem;
+}
+.dianhua .iconfont {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.1rem;
+  background-color: #17DE94;
+  font-size: 0.4rem;
+  line-height: 0.8rem;
+  text-align: center;
+  color: #fff;
+  margin-right: 0.28rem;
+}
+.dianhua .telephone .rexian {
+  font-size: 0.28rem;
+  color: #333333;
+}
+.dianhua .telephone .rexian span {
+  color: #17DE94;
+}
+.dianhua .telephone .timer {
+  font-size: 0.24rem;
+  color: #A6A5A5;
+  margin-top: 0.16rem;
+}
+footer {
+  height: 1.65rem;
+  padding-top: 0.45rem;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.28rem;
+  color: #494848;
+}
+footer .choose a {
+  font-size: 0.28rem;
+  color: #494848;
+  margin-right: 0.1rem;
+  margin-left: 0.1rem;
+}
+footer .copy {
+  font-size: 0.26rem;
+  color: #9a9b9c;
+}
