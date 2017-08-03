@@ -1,199 +1,218 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title></title>
+		<title>主页猫</title>
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/iconfont.css" />
+		<script type="text/javascript">
+			var fs = document.documentElement.clientWidth / 750  * 100; 
+			document.querySelector("html").style.fontSize = fs + "px";
+		</script>
 	</head>
 	<body>
-		<header class="logo">
-				<a href="" class="logoImg">
-					<img src="img/logo.png" alt="" />
-					<h1>我的招财猫</h1>
-				</a>
-			<div class="register">
-				<a href="">注册</a>|<a href="">登录</a>
+		<!--logo区域-->
+		<header>
+			<div class="logo">
+				<a href="" class="logo-left">
+					<img src="images/logo.png" alt="" />
+					<h1>招财猫理财</h1>
+				</a>	
+			</div>
+			<div class="title">
+				<a href="" class="title-right">注册</a>|<a>登录</a>
 			</div>
 		</header>
-		<section class="firstpage">
-			<a href="" class="first">首页</a>
-			<a href="">我要投资</a>
-			<a href="">账户中心</a>
+		<!--topnav区域-->
+		<section class="topnav">
+				<a href="" class="current">首页</a>
+				<a href="">我要投资</a>
+				<a href="">账户中心</a>
 		</section>
+		<!--轮播图-->
 		<div id='slider' class='swipe'>
 			  <div class='swipe-wrap'>
 			    <div class="page">
-			    	<img src="img/slider1.jpg" alt="" />
+			    	<img src="images/slider1.jpg">
 			    </div>
-			    <div class="page">
-			    	<img src="img/slider2.jpg" alt="" />
+			      <div class="page">
+			    	<img src="images/slider2.jpg">
 			    </div>
 			  </div>
-		  
-		  
 		   <div class="indirector">
 		    	<span class="on"></span>
 		    	<span></span>
 		    </div>
 		    
 		</div>
+		<!--用户导航-->
 		<section class="usernav">
-			<ul class="listitem">
+			<a href="">
+				<i class="iconfont icon-suo"></i>
+				<div>安全保障</div>
+			</a>
+			<a href="">
+				<i class="iconfont icon-women"></i>
+				<div>关于我们</div>
+			</a>
+			<a href="">
+				<i class="iconfont icon-xinshouzhiyin"></i>
+				<div>新手指引</div>
+			</a>
+			<a href="">
+				<i class="iconfont icon-wenti"></i>
+				<div>帮助中心</div>
+			</a>
+		</section>
+		<!--热门产品-->
+		<section class="hotproducts">
+			<div class="hot">
+					<h3>热门产品</h3>
+				<a href="" clas="more">更多</a>
+			</div>
+			<ul class="itemlist">
 				<li class="item">
-					<i class="iconfont icon-suo"></i>
-					<p>安全保障</p>
+					<div class="item-title">
+						<h4>盈信计划2467号1期</h4>
+						<span>
+							<i class="cash">返现金</i>
+							<i class="iconfont icon-vip"></i>
+						</span>
+					</div>
+						<div class="data">
+							<div class="data1">
+								<strong>9.2%</strong>
+								<em>+0.5%</em>
+							</div>
+							<div class="data2">
+								<p><strong>180</strong>天</p>
+								<p>投资期限</p>
+							</div>
+							<div class="data3">
+								<img src="images/data3.png" alt="" />
+							</div>
+						</div>
+					</div>
 				</li>
 				<li class="item">
-					<i class="iconfont icon-women"></i>
-					<p>关于我们</p>
+					<div class="item-title">
+						<h4>盈信计划2467号1期</h4>
+						<span>
+							<i class="cash">返现金</i>
+							<i class="iconfont icon-vip"></i>
+						</span>
+					</div>
+						<div class="data">
+							<div class="data1">
+								<strong>9.2%</strong>
+								<em>+0.5%</em>
+							</div>
+							<div class="data2">
+								<p><strong>180</strong>天</p>
+								<p>投资期限</p>
+							</div>
+							<div class="data3">
+								<img src="images/data3.png" alt="" />
+							</div>
+						</div>
+					</div>
 				</li>
-				<li class="item">
-					<i class="iconfont icon-xinshouzhiyin"></i>
-					<p>新手指引</p>
-				</li>
-				<li class="item">
-					<i class="iconfont icon-wenti"></i>
-					<p>帮助中心</p>
+				<li class="item last">
+					<div class="item-title">
+						<h4>盈信计划2467号1期</h4>
+						<span>
+							<i class="cash">返现金</i>
+							<i class="iconfont icon-vip"></i>
+						</span>
+					</div>
+						<div class="data">
+							<div class="data1">
+								<strong>9.2%</strong>
+								<em>+0.5%</em>
+							</div>
+							<div class="data2">
+								<p><strong>180</strong>天</p>
+								<p>投资期限</p>
+							</div>
+							<div class="data3">
+								<img src="images/data3.png" alt="" />
+							</div>
+						</div>
+					</div>
 				</li>
 			</ul>
 		</section>
-		<section class="hots">
-			<div class="hotTitle">
-				<h3>热门产品</h3>
-				<a href="" class="more">更多</a>
-				</div>
-				<ul class="hotlist">
-					<li class="item">
-						<div class="itemtitle">
-							<h4>营信计划2467号1期</h4>
-							<div class="titleright">
-								<span class="money">返现金</span>
-								<i class="iconfont icon-vip"></i>
-							</div>
+		<!--企业动态-->
+		<section class="news">
+			<div class="title">
+				<h3>企业动态</h3><a href="" class="more">更多</a>
+			</div>
+			<ul class="itemlist">
+				<li class="item">
+					<a href="">
+						<img src="images/news20170310144045_植树节专享标题.jpg" alt="" />
+						<div>
+							<h4>春日梦想，植树专享</h4>
+							<p>
+								<span>来源:招财猫理财</span>
+								<i>2017-03-10</i>
+							</p>
 						</div>
-						<div class="data">
-							<div class="left">
-								<p><span class="baifenshu">9.2%</span>+0.5%</p>
-							</div>
-							<div class="middle">
-								<p><span class="day">180</span>天</p>
-								<p>投资期限</p>
-							</div>
-							<div class="right">
-								<img src="img/data3.png" alt="" />
-							</div>
+					</a>
+				</li>
+				<li class="item">
+					<a href="">
+						<img src="images/news20170310144045_植树节专享标题.png" alt="" />
+						<div>
+							<h4>全民植树，热爱森活</h4>
+							<p>
+								<span>来源:招财猫理财</span>
+								<i>2017-03-10</i>
+							</p>
 						</div>
-					</li>
-					<li class="item">
-						<div class="itemtitle">
-							<h4>营信计划2467号1期</h4>
-							<div class="titleright">
-								<span class="money">返现金</span>
-								<i class="iconfont icon-vip"></i>
-							</div>
+					</a>
+				</li>
+				<li class="item">
+					<a href="">
+						<img src="images/news20170309133946_工资日标题.jpg" alt="" />
+						<div>
+							<h4>每月工资日 理财必加薪</h4>
+							<p>
+								<span>来源:招财猫理财</span>
+								<i>2017-03-09</i>
+							</p>
 						</div>
-						<div class="data">
-							<div class="left">
-								<p><span class="baifenshu">9.2%</span>+0.5%</p>
-							</div>
-							<div class="middle">
-								<p><span class="day">180</span>天</p>
-								<p>投资期限</p>
-							</div>
-							<div class="right">
-								<img src="img/data3.png" alt="" />
-							</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="itemtitle">
-							<h4>营信计划2467号1期</h4>
-							<div class="titleright">
-								<span class="money">返现金</span>
-								<i class="iconfont icon-vip"></i>
-							</div>
-						</div>
-						<div class="data">
-							<div class="left">
-								<p><span class="baifenshu">9.2%</span>+0.5%</p>
-							</div>
-							<div class="middle">
-								<p><span class="day">180</span>天</p>
-								<p>投资期限</p>
-							</div>
-							<div class="right">
-								<img src="img/data3.png" alt="" />
-							</div>
-						</div>
-					</li>
-				</ul>
+					</a>
+				</li>
+			</ul>
+			
 		</section>
-		<section class="trends">
-			<div class="hotTitle">
-				<h3>企业动态</h3>
-				<a href="" class="more">更多</a>
-				</div>
-				<ul class="list">
-					<li class="item">
-						<img src="img/2.jpg" alt="" />
-						<div class="wrap">
-							<h4>春日梦想 植树专享</h4>
-								<div class="origin">
-									<p>来源:招财猫理财</p>
-									<span>2017-08-01</span>
-								</div>
-						</div>
-						
-					</li>
-					<li class="item">
-						<img src="img/1.jpg" alt="" />
-						<div class="wrap">
-							<h4>春日梦想 植树专享</h4>
-								<div class="origin">
-									<p>来源:招财猫理财</p>
-									<span>2017-08-01</span>
-								</div>
-						</div>
-						
-					</li>
-					<li class="item">
-						<img src="img/2.jpg" alt="" />
-						<div class="wrap">
-							<h4>春日梦想 植树专享</h4>
-								<div class="origin">
-									<p>来源:招财猫理财</p>
-									<span>2017-08-01</span>
-								</div>
-						</div>
-						
-					</li>
-				</ul>
-		</section>
+		<!--版权声明-->
 		<footer>
-			<p class="choose"><a href="">电脑版</a>|<a href="">手机版</a>|<a href="">下载APP</a></p>
-			<p class="copy">&copy;2017招财猫理财 浙ICP备1404162016号</p>
+			<p class="links">
+				<a href="">触屏版|</a>
+				<a href="">电脑版|</a>
+				<a href="">APP下载</a>
+			</p>
+			<p class="copyright">&copy;2017招财猫理财 浙ICP备14041616号</p>
 		</footer>
-		<script type="text/javascript">
-			var fs=document.documentElement.clientWidth;
-//			console.log(fs);
-			document.querySelector("html").style.fontSize=fs*100/750+"px";
-		</script>
-		<script src="zepto-master/src/zepto.js" type="text/javascript" charset="utf-8"></script>
-		<script src="zepto-master/src/event.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/swipe.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="./js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/swipe.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			
 			window.mySwipe = Swipe(document.getElementById('slider'),
 				{
 				  startSlide: 0, //第几张开始
-				  speed: 400,
-				  auto: 0, 	  //是否自动播放。为0就不会自动播放
+				  speed: 2000,
+				  auto: 1, 	  //是否自动播放。为0就不会自动播放
 				  continuous: true,//无限循环
 				  disableScroll: false,
 				  stopPropagation: false,
 				  callback: function(index, elem) {
+				  	
 				    $(".indirector span").eq(index%2).addClass("on").siblings().removeClass("on");
 				  	console.info("callback",index,elem);
 				  	
@@ -212,5 +231,7 @@
 			
 			
 		</script>
+		
 	</body>
 </html>
+	
